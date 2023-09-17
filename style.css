@@ -44,7 +44,6 @@ body {
     overflow: hidden;
     margin-inline: 1rem;
 }
-
 .product-details {
     padding: 2rem;
     display: flex;
@@ -104,10 +103,9 @@ body {
 .btn:hover {
     background-color: var(--Dark-cyan);
 }
+
  @media (max-width: 760px) {
-    body {
-        padding:  1rem;
-    }
+    
     .container {
         grid-template-columns: 1fr;
     }
