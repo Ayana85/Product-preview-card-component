@@ -40,8 +40,7 @@ body {
     display: grid;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     grid-template-columns: repeat(2, 1fr);
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    border-radius: 1rem;
+    border-radius: .7rem;
     overflow: hidden;
     margin-inline: 1rem;
 }
@@ -53,7 +52,7 @@ body {
     gap: 1.7rem;
     font-size: .78rem;
     align-content: start;
-    border-radius: 1rem;
+    border-radius: .7rem;
 }
 .pro-info {
     display: flex;
@@ -107,10 +106,9 @@ body {
 }
  @media (max-width: 760px) {
     body {
-        padding: 1.5rem;
+        padding:  1rem;
     }
     .container {
         grid-template-columns: 1fr;
     }
-    
  }
