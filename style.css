@@ -1,16 +1,116 @@
 :root {
-    /* ### Primary */
+    
 --Dark-cyan: hsl(158, 36%, 37%);
 --Cream: hsl(30, 38%, 92%);
-
-/* ### Neutral */
 
 --Very-dark-blue: hsl(212, 21%, 14%);
 --Dark-grayish-blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
 }
+
 *,
 ::before,
 ::after {
     box-sizing: border-box;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    place-items: center;
+    color: hsl(212, 21%, 14%, .6);
+    background-color: var(--White);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 35rem;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    grid-template-columns: repeat(2, 1fr);
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-inline: 1rem;
+}
+
+.product-details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    font-size: .78rem;
+    align-content: start;
+    border-radius: 1rem;
+}
+.pro-info {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.title {
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-size: .78rem;
+}
+.pro-brand {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 10rem;
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+}
+
+.span {
+    display: flex;
+    place-items: center;
+}
+.sale-price {
+    color: var(--Dark-cyan);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin-right: 1rem;
+}
+.orginal-price {
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%, .9);
+    border: none;
+    display: flex;
+    gap: .5rem;
+    padding:1rem 2rem;
+    border-radius: .5rem;
+    justify-content: center;
+    color: var(--Cream);
+    font-size: .78rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--Dark-cyan);
+}
+ @media (max-width: 760px) {
+    body {
+        padding: 1.5rem;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+ }
