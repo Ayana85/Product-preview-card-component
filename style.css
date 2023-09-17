@@ -31,7 +31,7 @@ body {
     font-size: 14px;
     place-items: center;
     color: hsl(212, 21%, 14%, .6);
-    background-color: var(--White);
+    background-color: var(--Cream);
     line-height: 1.5;
 }
 
@@ -43,6 +43,7 @@ body {
     border-radius: .7rem;
     overflow: hidden;
     margin-inline: 1rem;
+    background-color: var(--White);
 }
 .product-details {
     padding: 2rem;
